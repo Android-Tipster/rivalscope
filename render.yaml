@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: rivalscope
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: DATAFORSEO_USER
+        sync: false
+      - key: DATAFORSEO_PASS
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false

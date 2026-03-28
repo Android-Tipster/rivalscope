@@ -35,7 +35,7 @@ export async function getDomainOverview(domain: string): Promise<DomainOverview>
     const data = await dfsPost('dataforseo_labs/google/domain_rank_overview/live', [
       { target: domain, language_code: 'en', location_code: 2840 },
     ])
-    const metrics = data?.tasks?.[0]?.result?.[0]?.metrics?.organic
+    const metrics = data?.tasks?.[0]?.result?.[0]?.items?.[0]?.metrics?.organic
     return {
       domain,
       organicKeywords: metrics?.count ?? 0,

@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "env": {
+    "DATAFORSEO_USER": "@dataforseo_user",
+    "DATAFORSEO_PASS": "@dataforseo_pass",
+    "ANTHROPIC_API_KEY": "@anthropic_api_key"
+  }
+}
